@@ -2,7 +2,7 @@ const characters = [
     {
       "id": 1,
       "name": "Humano",
-      "avatar": "/assets/humano.jpg",
+      "avatar": "./assets/humano.jpg",
       "damage": [
         "6d6",
         "2d10",
@@ -15,7 +15,7 @@ const characters = [
     {
       "id": 2,
       "name": "Enano",
-      "avatar": "/assets/enano.jpg",
+      "avatar": "./assets/enano.jpg",
       "damage": [
         "8d4",
         "3d10"
@@ -27,7 +27,7 @@ const characters = [
     {
       "id": 3,
       "name": "Licántropo",
-      "avatar": "/assets/licantropo.jpg",
+      "avatar": "./assets/licantropo.jpg",
       "damage": [
         "4d10",
         "2d20"
@@ -39,7 +39,7 @@ const characters = [
     {
       "id": 1,
       "name": "Orco",
-      "avatar": "/assets/orco.jpg",
+      "avatar": "./assets/orco.jpg",
       "damage": [
         "3d20"
       ],
@@ -50,7 +50,7 @@ const characters = [
     {
       "id": 1,
       "name": "Elfo",
-      "avatar": "/assets/elfo.jpg",
+      "avatar": "./assets/elfo.jpg",
       "damage": [
         "12d6"
       ],
@@ -63,8 +63,9 @@ const characters = [
 let clicks = 0;
 let jugador1;
 let jugador2;
-let fightButton$$;
 let resetButton$$;
+let fightButton$$;
+
 
 const presentacion$$ = document.createElement('div');
 presentacion$$.classList.add("presentacion");
